@@ -1,0 +1,18 @@
+
+.general__divider {
+    margin: 25px auto 0;
+}
+.general__title-fz__16 {
+    text-align: center;
+    position: relative;
+        @include before_circle;
+        &:before {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+}
+.general__title-fz__36 {
+    text-align: center;
+    margin-top: 6px;
+}

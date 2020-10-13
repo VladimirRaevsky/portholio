@@ -1,0 +1,17 @@
+.policy__wrapper {
+    padding: 50px 50px 50px 70px;
+    line-height: 25px;
+    font-weight: 500;
+    span {
+        background-color: orange;
+    }
+    .home {
+        position: fixed;
+        left: 8px;
+        top: 20px;
+        @include before_circle;
+        &:before {
+            left: 6px;
+        }
+    }
+}

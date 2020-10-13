@@ -1,0 +1,96 @@
+.resume {
+    padding-top: 120px;
+    &__title_fz16 {
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 65px 0 65px;
+    }
+    &__column {
+        width: 425px;
+        min-height: 378px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+        }
+        li {
+            position: relative;
+            &:before {
+                content: '';
+                width: 1px;
+                height: calc(100% + 50px);
+                left: 1px;
+                position: absolute;
+                top: -56px;
+                background-color: #000;
+            }
+        }
+    }
+    .title-fz__20 {
+        padding-left: 40px;
+        position: relative;
+        @include before_circle;
+        &:before {
+            width: 15px;
+            height: 15px;
+            left: 1px;
+            top: 37%;
+            transform: translateX(-50%);
+        }
+    }
+    &__img {
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: -16px;
+            top: -14px;
+        }
+    }
+    &__item {
+        margin-top: 45px;
+        padding-left: 43px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 42px;
+            height: 1px;
+            background-color: #000;
+            left: 1px;
+            top: 15px;
+        }
+        &-head {
+            align-items: center;
+            display: flex;
+            padding-left: 16px;
+        }
+        &-location {
+            padding-left: 18px;
+        }
+        .subtitle {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__text {
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+    
+}

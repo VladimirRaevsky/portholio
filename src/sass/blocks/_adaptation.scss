@@ -1,0 +1,373 @@
+@media (max-width: 1399px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 514px;
+            column-gap: 50px;
+        }
+        &__skills {
+            grid-template: repeat(2,minmax(115px , auto)) / repeat(2 , 204px);
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+            row-gap: 20px;  
+        }
+    }
+    .progress {
+        &__wrapper {
+            grid-template-columns: repeat(2,350px);
+            justify-content: center;
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            row-gap: 20px;
+            justify-content: space-between;
+        }
+        .horizontally, .vertically {
+            grid-row: inherit;
+            grid-column: inherit;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
+    }
+    .contacts {
+        &__wrapper {
+            padding: 100px 24px 80px 24px;
+            grid-template-columns: 300px 485px;
+            justify-content: space-around;
+        }
+        &__descr {
+            form {
+                grid-template-columns: repeat(2, 250px);
+            }
+        }
+        &__trigges {
+            grid-template-columns: 192px 297px;
+        }
+        .btn {           
+            padding: 12px 15px;
+        }
+        &__photo {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .about {
+        padding-top: 80px;
+        &__photo {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 30px;
+        }
+        &__text {
+            margin-bottom: 10px;
+        }
+
+        &__skills {
+            grid-template-columns: 380px;
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+        }
+    }
+    .title {
+        &-fz__36 {
+            font-size: 28px;
+        }
+    }
+    .progress {
+        padding-top: 50px;
+        &__wrapper {
+            grid-template-columns: repeat(2,320px);
+            justify-content: center;
+        }
+    }
+    .prise {
+        &__wrapper {
+            grid-template-columns: repeat(1, 366px);
+            justify-content: center;
+            row-gap: 20px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 500px;
+            justify-content: center;
+        }
+        &__photo {
+            display: none;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template:400px auto auto / 1fr;
+            row-gap: 20px;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+                grid-template-columns: repeat(2 , 250px);
+                column-gap: 25px;
+                grid-auto-rows: minmax(115px, auto);
+           &-item {
+                grid-template-columns: 20px 220px;
+           }
+        }
+    }
+    .title {
+        &-fz__48 {
+            font-size: 36px;
+        }
+        &-fz__36 {
+            font-size: 21px;
+        }
+    }
+    .resume {
+        padding-top: 60px;
+        .divider {
+            margin-top: 0;
+        }
+        &__wrapper {
+            flex-direction: column;
+            padding: 40px 40px 0 40px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        .divider {
+            margin-top: 0;
+        }
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-columns: repeat(1,270px);
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .progress {
+        padding-top: 50px;
+        &__wrapper {
+            grid-template-columns: repeat(2,250px);
+            justify-content: center;
+        }
+    }
+    .work {
+        padding-top: 60px;
+        .divider {
+            margin-top: 0;
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    .prise {
+        .divider {
+            margin-top: 21px;
+        }
+        &__wrapper {
+            margin-top: 30px;
+        }
+        
+    }
+    .contacts {
+        
+        &__wrapper {
+            padding: 100px 24px 80px 24px;
+            grid-template-columns: 500px;
+        }
+        &__descr {
+            
+            form {
+                grid-template-columns: repeat(2, 250px);
+            }
+        }
+        &__trigges {
+            grid-template-columns: 192px 297px;
+        }
+        .btn {           
+            padding: 12px 15px;
+        }
+        &__photo {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        background: url(../img/main_bg.jpg) no-repeat 57%/cover;
+        &__buttons {
+            margin-top: 32px;
+        }
+        .hamburger {
+            right: 20px;
+        }
+        .title {
+            &-fz__48 {
+                width: 300px;
+                font-size: 26px;
+                line-height: 39px;
+            }
+        } 
+    }
+    .menu__block{
+        padding-left: 20px;
+        width: 250px;
+    }
+    .about {
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        .divider {
+            margin-top: 0;
+        }
+        &__wrapper {
+            flex-direction: column;
+            padding: 40px 12px 0 70px;
+        }
+        &__column {
+            width: 300px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        .divider {
+            margin-top: 0;
+        }
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-columns: repeat(1, 270px);
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .progress {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: repeat(1,300px);
+            justify-content: center;
+        }
+    }
+    .work {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+        }
+        
+    }
+    .prise {
+        padding-top: 46px;
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-columns: repeat(1, 300px);
+            justify-content: center;
+            row-gap: 20px;
+        }
+    }
+    .contacts {
+        
+        &__wrapper {
+            padding: 40px 0;
+            grid-template-columns: 300px;
+            justify-content: center;
+        }
+        &__photo {
+            display: none;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 26px;
+        }
+        &__form {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__textarea {
+            width: 300px;
+            height: 143px;
+        }
+        &__input {
+            width: 300px;
+            height: 45px;
+            input {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__trigges {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__policy {
+            width: 180px;
+            height: 36px;
+            margin-top: 0;
+        }
+    }
+    
+}
+@media (max-width: 396px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 12px 0 8px;
+        }
+    }
+}
